@@ -13,10 +13,12 @@ const route = useRoute();
 
 <template>
   <div class="flex-shrink-0 w-72 flex flex-col gap-y-12 p-12 bg-neutral-950">
-    <div class="flex items-center gap-x-3">
-      <AppLogo class="w-10"/>
-      <span class="text-neutral-100 text-2xl italic font-medium tracking-wide">Handyman</span>
-    </div>
+    <RouterLink :to="{ name: 'dashboard'}">
+      <div class="flex items-center gap-x-3">
+        <AppLogo class="w-10"/>
+        <span class="text-neutral-100 text-2xl italic font-medium tracking-wide">Handyman</span>
+      </div>
+    </RouterLink>
 
     <div class="flex flex-col gap-y-3">
       <NavLink :to="{name: 'dashboard'}" :active="route.name === 'dashboard'">

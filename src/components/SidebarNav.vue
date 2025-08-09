@@ -75,12 +75,14 @@ const route = useRoute();
       </ExternalNavLink>
     </div>
 
-    <button
-      class="text-red-300 hover:text-red-400 focus:text-red-400 cursor-pointer transition duration-300 ease-in-out">
-      <div class="flex items-center gap-x-3">
-        <LogOut class="w-5"/>
-        <span>Logout</span>
-      </div>
-    </button>
+    <div class="flex-grow flex items-end">
+      <button
+        class="text-red-300 hover:text-red-400 focus:text-red-400 cursor-pointer transition duration-300 ease-in-out">
+        <div class="flex items-center gap-x-3">
+          <LogOut class="w-5"/>
+          <span>Logout</span>
+        </div>
+      </button>
+    </div>
   </div>
 </template>

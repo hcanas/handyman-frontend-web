@@ -18,17 +18,6 @@ const route = useRoute();
       <span class="text-neutral-100 text-2xl italic font-medium tracking-wide">Handyman</span>
     </div>
 
-    <div class="flex flex-col">
-      <p class="text-neutral-100">{{ auth.user.name }}</p>
-      <p class="text-neutral-400 italic">{{ auth.user.email }}</p>
-      <RouterLink :to="{ name: 'settings'}" class="group">
-        <div class="flex items-center gap-x-1">
-          <Settings class="w-3 text-blue-400"/>
-          <span class="text-sm text-blue-400 group-hover:underline italic">Account Settings</span>
-        </div>
-      </RouterLink>
-    </div>
-
     <div class="flex flex-col gap-y-3">
       <NavLink :to="{name: 'dashboard'}" :active="route.name === 'dashboard'">
         <div class="flex items-center gap-x-3">
@@ -73,9 +62,25 @@ const route = useRoute();
           <span class="text-sm">/frontend_web</span>
         </div>
       </ExternalNavLink>
+
+      <RouterLink :to="{ name: 'settings'}" class="text-neutral-400 hover:text-purple-500 transition duration-300 ease-in-out">
+        <div class="flex items-center gap-x-3">
+          <Settings class="w-5"/>
+          <span class="text-sm italic">Account Settings</span>
+        </div>
+      </RouterLink>
     </div>
 
-    <div class="flex-grow flex items-end">
+    <div class="flex-grow flex flex-col justify-end gap-y-6">
+      <div class="flex items-center gap-x-3">
+        <p class="flex-shrink-0 text-neutral-100 text-2xl text-center uppercase bg-neutral-900 w-10 h-10 rounded">{{ auth.user.name.charAt(0) }}</p>
+
+        <div class="flex flex-col min-w-0">
+          <p class="text-neutral-100 text-sm truncate">{{ auth.user.name }}</p>
+          <p class="text-neutral-400 text-sm truncate italic">{{ auth.user.email }}</p>
+        </div>
+      </div>
+
       <button
         class="text-red-300 hover:text-red-400 focus:text-red-400 cursor-pointer transition duration-300 ease-in-out">
         <div class="flex items-center gap-x-3">

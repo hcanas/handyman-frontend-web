@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@layer base {
+    input,
+    select,
+    textarea,
+    button {
+        @apply outline-none focus:ring-1 focus:ring-purple-800
+    }
+}

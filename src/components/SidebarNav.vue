@@ -60,14 +60,14 @@ const route = useRoute();
 
       <hr class="text-neutral-700"/>
 
-      <ExternalNavLink to="https://github.com/hcanas/handyman_api">
+      <ExternalNavLink to="https://github.com/hcanas/handyman-api">
         <div class="flex items-center gap-x-3">
           <Github class="w-5"/>
           <span class="text-sm">/api</span>
         </div>
       </ExternalNavLink>
 
-      <ExternalNavLink to="https://github.com/hcanas/handyman_frontend_web">
+      <ExternalNavLink to="https://github.com/hcanas/handyman-frontend-web">
         <div class="flex items-center gap-x-3">
           <Github class="w-5"/>
           <span class="text-sm">/frontend_web</span>

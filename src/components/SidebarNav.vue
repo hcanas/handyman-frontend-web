@@ -58,7 +58,7 @@ const route = useRoute();
         </div>
       </NavLink>
 
-      <hr class="text-neutral-700"/>
+      <hr class="text-neutral-800 my-6"/>
 
       <ExternalNavLink to="https://github.com/hcanas/handyman-api">
         <div class="flex items-center gap-x-3">

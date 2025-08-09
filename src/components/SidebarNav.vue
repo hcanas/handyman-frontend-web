@@ -12,7 +12,7 @@ const route = useRoute();
 </script>
 
 <template>
-  <div class="flex-shrink-0 w-72 flex flex-col gap-y-12 p-12">
+  <div class="flex-shrink-0 w-72 flex flex-col gap-y-12 p-12 bg-neutral-950">
     <div class="flex items-center gap-x-3">
       <AppLogo class="w-10"/>
       <span class="text-neutral-100 text-2xl italic font-medium tracking-wide">Handyman</span>

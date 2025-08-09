@@ -5,7 +5,7 @@ import SidebarNav from "../components/SidebarNav.vue";
 <template>
   <div class="w-full min-h-screen flex">
     <SidebarNav/>
-    <main class="flex-grow flex flex-col py-12">
+    <main class="flex-grow flex flex-col p-12">
       <slot/>
     </main>
   </div>

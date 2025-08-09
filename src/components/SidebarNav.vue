@@ -33,28 +33,28 @@ const route = useRoute();
       <NavLink :to="{name: 'dashboard'}" :active="route.name === 'dashboard'">
         <div class="flex items-center gap-x-3">
           <Gauge class="w-5"/>
-          <span>Dashboard</span>
+          <span class="text-sm">Dashboard</span>
         </div>
       </NavLink>
 
       <NavLink :to="{name: 'tickets'}" :active="route.name === 'tickets'">
         <div class="flex items-center gap-x-3">
           <Tickets class="w-5"/>
-          <span>Tickets</span>
+          <span class="text-sm">Tickets</span>
         </div>
       </NavLink>
 
       <NavLink :to="{name: 'users'}" :active="route.name === 'users'">
         <div class="flex items-center gap-x-3">
           <Users class="w-5"/>
-          <span>Users</span>
+          <span class="text-sm">Users</span>
         </div>
       </NavLink>
 
       <NavLink :to="{name: 'departments'}" :active="route.name === 'departments'">
         <div class="flex items-center gap-x-3">
           <Building class="w-5"/>
-          <span>Departments</span>
+          <span class="text-sm">Departments</span>
         </div>
       </NavLink>
 

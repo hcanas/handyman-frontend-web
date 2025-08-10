@@ -68,7 +68,7 @@ const route = useRoute();
       <RouterLink :to="{ name: 'settings'}" class="text-neutral-400 hover:text-purple-500 transition duration-300 ease-in-out">
         <div class="flex items-center gap-x-3">
           <Settings class="w-5"/>
-          <span class="text-sm italic">Account Settings</span>
+          <span class="text-sm">Account Settings</span>
         </div>
       </RouterLink>
     </div>

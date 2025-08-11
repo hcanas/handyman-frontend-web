@@ -20,6 +20,15 @@ const route = useRoute();
       </div>
     </RouterLink>
 
+    <div class="flex items-center gap-x-3">
+      <p class="flex-shrink-0 text-neutral-100 text-2xl text-center uppercase bg-neutral-900 w-10 h-10 rounded">{{ auth.user.name.charAt(0) }}</p>
+
+      <div class="flex flex-col min-w-0">
+        <p class="text-neutral-100 text-sm truncate">{{ auth.user.name }}</p>
+        <p class="text-neutral-400 text-sm truncate italic">{{ auth.user.email }}</p>
+      </div>
+    </div>
+
     <div class="flex flex-col gap-y-3">
       <NavLink :to="{name: 'dashboard'}" :active="route.name === 'dashboard'">
         <div class="flex items-center gap-x-3">
@@ -71,17 +80,8 @@ const route = useRoute();
           <span class="text-sm">Account Settings</span>
         </div>
       </RouterLink>
-    </div>
 
-    <div class="flex-grow flex flex-col justify-end gap-y-6">
-      <div class="flex items-center gap-x-3">
-        <p class="flex-shrink-0 text-neutral-100 text-2xl text-center uppercase bg-neutral-900 w-10 h-10 rounded">{{ auth.user.name.charAt(0) }}</p>
-
-        <div class="flex flex-col min-w-0">
-          <p class="text-neutral-100 text-sm truncate">{{ auth.user.name }}</p>
-          <p class="text-neutral-400 text-sm truncate italic">{{ auth.user.email }}</p>
-        </div>
-      </div>
+      <hr class="text-neutral-800 my-6"/>
 
       <button
         class="text-red-300 hover:text-red-400 focus:text-red-400 cursor-pointer transition duration-300 ease-in-out">

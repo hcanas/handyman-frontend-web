@@ -2,7 +2,7 @@
 import {useAuthStore} from "../stores/auth-store.ts";
 import AppLogo from "./AppLogo.vue";
 import NavLink from "./NavLink.vue";
-import {Building, Gauge, Github, LogOut, Settings, Tickets, Users} from "lucide-vue-next";
+import {Building, Gauge, Github, BookText, LogOut, Settings, Tickets, Users} from "lucide-vue-next";
 import ExternalNavLink from "./ExternalNavLink.vue";
 import {useRoute} from "vue-router";
 
@@ -64,6 +64,13 @@ const route = useRoute();
         <div class="flex items-center gap-x-3">
           <Github class="w-5"/>
           <span class="text-sm">/api</span>
+        </div>
+      </ExternalNavLink>
+
+      <ExternalNavLink to="https://handyman-api-production-d322.up.railway.app">
+        <div class="flex items-center gap-x-3">
+          <BookText class="w-5"/>
+          <span class="text-sm">/api/docs</span>
         </div>
       </ExternalNavLink>
 
